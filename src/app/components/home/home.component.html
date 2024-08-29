@@ -12,9 +12,9 @@
   <nav>
     <ul>
       <li><a routerLink="/home">Home</a></li>
-      <li><a routerLink="/home">About</a></li>
-      <li><a routerLink="/home">Technologies</a></li>
-      <li><a routerLink="/home">Projects</a></li>
+      <li><a routerLink="/about">About</a></li>
+      <li><a routerLink="/technologies">Technologies</a></li>
+      <li><a routerLink="/projects">Projects</a></li>
     </ul>
   </nav>
 </header>
@@ -27,10 +27,10 @@
 
 <section>
   <div class="container">
-    <h2>Explore Profiler</h2>
-    <p>Profiler is where you'll find quick access to James' portfolio.<br>Navigate through my pages as you please.</p>
+    <h2>Explore ProfileMe</h2>
+    <p>ProfileMe is where you'll find quick access to James' portfolio.<br>Navigate through my pages as you please.</p>
     <p><br>Click below to begin!</p>
-    <a href="experiments.html">
+    <a [routerLink]="['/about']">
       <img src="glass2.png" alt="Image 2">
     </a>
   </div>
@@ -53,7 +53,7 @@
 <section>
   <div class="container">
     <h2>Site Feedback</h2>
-    <p>To submit feedback for improvements with Profiler, use the prompt below:</p>
+    <p>To submit feedback for improvements with ProfileMe, use the prompt below:</p>
     <br>
     <form onsubmit="showDialog(event)">
       <p class="label">Name:</p>
@@ -85,12 +85,12 @@
       <div class="footer-column">
         <h3>Contact</h3>
         <p>Email: jamestest&#64;gmail.com</p>
-        <p>Phone: 800-456-7890</p>
+        <p>Phone: 123-456-7890</p>
         <p>Address: Unfortunately not at home</p>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2023 Experiments™. All rights not reserved. Personality likeness is of no genuine indication of figures or their opinions.</p>
+      <p>&copy; 2023 ProfileMe™. All rights not reserved. Personality likeness is of no genuine indication of figures or their opinions.</p>
       <p>Data accuracy not guaranteed</p>
       <p><a href="#" class="footer-link" data-alert="We collect no data from our users. Usage of this site infers understanding of our terms of service.">Privacy Policy</a> |
         <a href="#" class="footer-link" data-alert="Experiments claims no ownership over displayed assets from our web view. Experiments reserves rights under 'Fair Use.' Furthermore, the user understands this project is not sponsored or endorsed by any genuine company or identity.">Terms of Service</a>
