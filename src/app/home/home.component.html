@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="home.component.scss">
+</head>
+
+<body>
+<header>
+  <nav>
+    <ul>
+      <li><a routerLink="/home">Home</a></li>
+      <li><a routerLink="/home">About</a></li>
+      <li><a routerLink="/home">Technologies</a></li>
+      <li><a routerLink="/home">Projects</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <h1></h1>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Explore Profiler</h2>
+    <p>Profiler is where you'll find quick access to James' portfolio.<br>Navigate through my pages as you please.</p>
+    <p><br>Click below to begin!</p>
+    <a href="experiments.html">
+      <img src="glass2.png" alt="Image 2">
+    </a>
+  </div>
+</section>
+
+<section class="testimonial">
+  <div class="container">
+    <h2>Testimonials</h2>
+    <div>
+      <img src="rock.png" alt="Testimonial 1">
+      <p>"He learns anything you throw at him. Became our onsite sexologist in half a week."</p>
+    </div>
+    <div>
+      <img src="obama.png" alt="Testimonial 2">
+      <p>"Wish I could have him back here again. Nobody else around here tells racist jokes like that!"</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Site Feedback</h2>
+    <p>To submit feedback for improvements with Profiler, use the prompt below:</p>
+    <br>
+    <form onsubmit="showDialog(event)">
+      <p class="label">Name:</p>
+      <input type="text" id="requester" name="requester" required>
+      <br><br>
+      <p class="label">Message:</p>
+      <textarea id="message" name="message" rows="5" required></textarea>
+      <br>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-column">
+        <h3>About</h3>
+        <p><a href="about.html">About Me</a></p>
+        <p><a href="technologies.html">Our Technologies</a></p>
+        <p><a href="about.html">Company History</a></p>
+      </div>
+      <div class="footer-column">
+        <h3>Services</h3>
+        <p>Graphs</p>
+        <p>Websites</p>
+        <p>Applications</p>
+      </div>
+      <div class="footer-column">
+        <h3>Contact</h3>
+        <p>Email: jamestest&#64;gmail.com</p>
+        <p>Phone: 800-456-7890</p>
+        <p>Address: Unfortunately not at home</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Experiments™. All rights not reserved. Personality likeness is of no genuine indication of figures or their opinions.</p>
+      <p>Data accuracy not guaranteed</p>
+      <p><a href="#" class="footer-link" data-alert="We collect no data from our users. Usage of this site infers understanding of our terms of service.">Privacy Policy</a> |
+        <a href="#" class="footer-link" data-alert="Experiments claims no ownership over displayed assets from our web view. Experiments reserves rights under 'Fair Use.' Furthermore, the user understands this project is not sponsored or endorsed by any genuine company or identity.">Terms of Service</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  var learnMoreLinks = document.querySelectorAll('.footer-link');
+
+  learnMoreLinks.forEach(function(link) {
+    link.addEventListener('click', function(event) {
+      event.preventDefault();
+      var alertMessage = this.dataset.alert;
+      alert(alertMessage);
+    });
+  });
+</script>
+
+</body>
+</html>
