@@ -19,7 +19,9 @@ export class AboutComponent {
       phone: '(123) 456-7890',
       location: 'Austin, TX'
     },
-    summary: 'Experienced software developer with a passion for creating efficient and scalable applications.',
+    summary: 'Experienced software engineer with a passion for creating secure and efficient applications. ' +
+    'Expert in scalable solutions and managing high performance databases. ' +
+    'Passionate about improving system performance, automating processes, and collaborating to drive successful deployments.',
     experience: [
       {
         company: 'Tech Solutions Inc.',

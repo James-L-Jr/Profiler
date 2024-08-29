@@ -9,43 +9,57 @@
     </nav>
   </header>
 
-  <div class="resume">
-    <h1>{{ resumeData.name }}</h1>
-    <h2>{{ resumeData.title }}</h2>
-    
-    <section class="contact">
-      <p>Email: {{ resumeData.contact.email }}</p>
-      <p>Phone: {{ resumeData.contact.phone }}</p>
-      <p>Location: {{ resumeData.contact.location }}</p>
+  <div class="resume-container">
+    <header class="resume-header">
+      <h1>{{ resumeData.name }}</h1>
+      <h2>{{ resumeData.title }}</h2>
+    </header>
+  
+    <section class="resume-contact">
+      <div class="contact-item">
+        <i class="fas fa-envelope"></i>
+        <span>{{ resumeData.contact.email }}</span>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-phone"></i>
+        <span>{{ resumeData.contact.phone }}</span>
+      </div>
+      <div class="contact-item">
+        <i class="fas fa-map-marker-alt"></i>
+        <span>{{ resumeData.contact.location }}</span>
+      </div>
     </section>
-    
-    <section class="summary">
-      <h3>Summary</h3>
+  
+    <section class="resume-summary">
+      <h3>Professional Summary</h3>
       <p>{{ resumeData.summary }}</p>
     </section>
-    
-    <section class="experience">
-      <h3>Experience</h3>
-      <div *ngFor="let job of resumeData.experience">
-        <h4>{{ job.position }} at {{ job.company }}</h4>
-        <p>{{ job.duration }}</p>
+  
+    <section class="resume-experience">
+      <h3>Work Experience</h3>
+      <div class="experience-item" *ngFor="let job of resumeData.experience">
+        <div class="experience-header">
+          <h4>{{ job.position }}</h4>
+          <span class="company">{{ job.company }}</span>
+          <span class="duration">{{ job.duration }}</span>
+        </div>
         <ul>
           <li *ngFor="let responsibility of job.responsibilities">{{ responsibility }}</li>
         </ul>
       </div>
     </section>
-    
-    <section class="education">
+  
+    <section class="resume-education">
       <h3>Education</h3>
-      <div *ngFor="let edu of resumeData.education">
+      <div class="education-item" *ngFor="let edu of resumeData.education">
         <h4>{{ edu.degree }}</h4>
         <p>{{ edu.institution }}, {{ edu.year }}</p>
       </div>
     </section>
-    
-    <section class="skills">
+  
+    <section class="resume-skills">
       <h3>Skills</h3>
-      <ul>
+      <ul class="skills-list">
         <li *ngFor="let skill of resumeData.skills">{{ skill }}</li>
       </ul>
     </section>
