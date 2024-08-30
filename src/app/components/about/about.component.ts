@@ -51,9 +51,10 @@ export class AboutComponent {
         position: 'Developer',
         duration: 'Dec 2021 - Jun 2022',
         responsibilities: [
-          'Developed and maintained company website',
-          'Assisted in the creation of mobile applications using React Native',
-          'Collaborated with design team to implement user-friendly interfaces'
+          'Developed full stack solutions in Java/Javascript for company-facing web applications',
+          'Conducted unit and integration testing using JUnit, Postman, Insomnia, and other tools',
+          'Validated testing for completeness as part of an organization-wide database upgrade initiative',
+          'Compiled and presented deployment readiness reports to business stakeholders'
         ]
       }
     ],
@@ -66,7 +67,7 @@ export class AboutComponent {
         gpa: '3.7'
       }
     ],
-    skills: ['JavaScript', 'TypeScript', 'Angular', 'React', 'Node.js', 'Python', 'Git', 'Docker']
+    skills: ['Java', 'Python', 'JavaScript', 'Bash', 'Angular', 'Git', 'Kubernetes', 'Docker', 'Ansible', 'Azure', 'CI/CD Tools', 'Postgres', 'SQL', 'Grafana', 'Agile', 'Linux']
   };
 
   getResumeDataKeys(): string {
