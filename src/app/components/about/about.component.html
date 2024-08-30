@@ -52,8 +52,14 @@
     <section class="resume-education">
       <h3>Education</h3>
       <div class="education-item" *ngFor="let edu of resumeData.education">
-        <h4>{{ edu.degree }}</h4>
-        <p>{{ edu.institution }}, {{ edu.year }}</p>
+        <div class="education-header">
+          <h4>{{ edu.degree }}</h4>
+          <span class="gpa">GPA: {{ edu.gpa }}</span>
+        </div>
+        <div class="education-details">
+          <p class="institution">{{ edu.institution }}, {{ edu.year }}</p>
+          <p class="focus">Focus: {{ edu.focus }}</p>
+        </div>
       </div>
     </section>
   

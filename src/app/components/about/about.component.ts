@@ -6,7 +6,7 @@ import { ResumeService } from '../../services/resume.service';
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [RouterModule],
+  imports: [RouterModule, CommonModule],
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss']
 })
@@ -24,19 +24,32 @@ export class AboutComponent {
     'Passionate about improving system performance, automating processes, and collaborating to drive successful deployments.',
     experience: [
       {
-        company: 'Tech Solutions Inc.',
+        company: 'General Motors',
         position: 'Software Engineer - Observability',
-        duration: 'Jun 2022 - Present',
+        duration: 'Dec 2023 - Present',
         responsibilities: [
-          'Lead a team of 5 developers in creating web applications',
-          'Implemented CI/CD pipelines, improving deployment efficiency by 40%',
-          'Mentored junior developers and conducted code reviews'
+          'Developed full-stack solutions for manufacturing applications, reaching several early deployment goals',
+          'Configured more than 100 Grafana dashboard visualizations to allow observability of critical manufacturing systems ' + 
+          'and reduce factory stoppages in more than 18 plants nationwide and abroad',
+          'Developed and applied custom functions to PostgreSQL databases to customize database behavior',
+          'Took a proactive role in testing, creating performance documentation and resolving more than 50 bugs'
         ]
       },
       {
-        company: 'StartUp Innovations',
-        position: 'Junior Developer',
-        duration: 'Jun 2018 - Dec 2019',
+        company: 'General Motors',
+        position: 'DevOps Engineer',
+        duration: 'Jun 2022 - Dec 2023',
+        responsibilities: [
+          'Acted as a company subject-matter expert for CI/CD workflows on the Azure platform',
+          'Brought more than six production applications to meet 100% of company CI/CD adoption standards',
+          'Developed deployment scripts to first-time deploy an organizational priority app to the Azure cloud',
+          'Managed and maintained virtual server environments across Windows and Linux operating systems'
+        ]
+      },
+      {
+        company: 'HCL America Inc.',
+        position: 'Developer',
+        duration: 'Dec 2021 - Jun 2022',
         responsibilities: [
           'Developed and maintained company website',
           'Assisted in the creation of mobile applications using React Native',
@@ -47,12 +60,18 @@ export class AboutComponent {
     education: [
       {
         degree: 'Bachelor of Science in Computer Science',
-        institution: 'University of Technology',
-        year: '2018'
+        focus: 'Cyber Security',
+        institution: 'University of Texas at San Antonio',
+        year: '2021',
+        gpa: '3.7'
       }
     ],
     skills: ['JavaScript', 'TypeScript', 'Angular', 'React', 'Node.js', 'Python', 'Git', 'Docker']
   };
+
+  getResumeDataKeys(): string {
+    return Object.keys(this.resumeData).join(', ');
+  }
 }
 
 
