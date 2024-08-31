@@ -10,6 +10,8 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
     RouterLink,
     CommonModule
   ],
+  templateUrl: './projects.component.html',
+  styleUrls: ['./projects.component.scss'],
   animations: [
     trigger('expandCollapse', [
       state('collapsed', style({
