@@ -17,5 +17,6 @@ export class HomeComponent {
 
   constructor() {
     document.documentElement.style.setProperty('--image-path', this.imagePath);
+    console.log('Is production:', environment.production);
   }
 }

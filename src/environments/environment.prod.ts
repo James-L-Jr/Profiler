@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  imagePath: './Profiler/'
+  imagePath: 'banner2.png'
 };
