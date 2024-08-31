@@ -3,7 +3,6 @@
 <title>Projects</title>
 <link rel="stylesheet" href="projects.component.scss">
 
-
 <header>
   <nav>
     <ul>
@@ -15,8 +14,30 @@
   </nav>
 </header>
 
+<div class="projects-container">
+  <h1 class="section-title">My Projects</h1>
+  <div class="projects-grid">
+    <div class="project-card" *ngFor="let project of projects" [@expandCollapse]="project.expanded ? 'expanded' : 'collapsed'">
+      <div class="project-content" [class.expanded]="project.expanded">
+        <div class="project-image" *ngIf="!project.expanded" [style.backgroundImage]="'url(' + project.imageUrl + ')'"></div>
+        <h2 class="project-title">{{project.title}}</h2>
+        <p class="project-description">{{project.description}}</p>
+        <div class="project-tags" *ngIf="!project.expanded">
+          <span class="tag" *ngFor="let tag of project.tags">{{tag}}</span>
+        </div>
+        <p class="additional-info" *ngIf="project.expanded">{{project.additionalInfo}}</p>
+        <button class="project-button" (click)="toggleProject(project)">
+          {{project.expanded ? 'Collapse' : 'View Details'}}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
 
-
+<section>
+  <p><i>Page under construction.</i></p>
+  <p><i>Thank you for your understanding.</i></p>
+</section>
 
 <footer>
   <div class="container">

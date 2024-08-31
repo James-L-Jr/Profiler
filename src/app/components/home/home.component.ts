@@ -13,12 +13,5 @@ import { environment } from '../../../environments/environment';
 })
 
 export class HomeComponent {
-  imagePath = environment.imagePath;
-
-  constructor() {
-    const completeImagePath = `${environment.imagePath}banner2.png`;
-    document.documentElement.style.setProperty('--image-path', completeImagePath);
-    console.log('Image path from file:', environment.imagePath);
-    console.log('Image path from here:', this.imagePath);
-  }
+  
 }
