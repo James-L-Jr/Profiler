@@ -32,19 +32,19 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 export class ProjectsComponent {
   projects = [
     {
-      title: 'Project 1',
-      description: 'A brief description of project 1. This showcases the main features and purpose of the project.',
-      imageUrl: 'assets/project1.jpg',
-      tags: ['Angular', 'TypeScript', 'SCSS'],
-      additionalInfo: 'This project was developed over the course of 3 months. It involved creating a responsive web application using Angular and integrating with a RESTful API. Key challenges included implementing real-time updates and optimizing performance for large datasets.',
+      title: 'Racist Project',
+      description: 'Undisclosed efforts to fortify the class system within the united states',
+      imageUrl: 'undisclosed.png',
+      tags: ['Get Rich', 'Implement Power', 'Control'],
+      additionalInfo: 'This project was developed over the course of 3 months. It involved things the average person would never think about. Let\'s just say I think a little differently than most others.',
       expanded: false
     },
     {
-      title: 'Project 2',
-      description: 'Description of project 2. Highlight the key aspects and technologies used in this project.',
-      imageUrl: 'assets/project2.jpg',
-      tags: ['React', 'Node.js', 'MongoDB'],
-      additionalInfo: 'Project 2 was a full-stack application built with React on the frontend and Node.js with MongoDB on the backend. It featured user authentication, real-time data synchronization, and a complex data visualization component.',
+      title: 'Extreme Racism Project',
+      description: 'Details of this project may be unvealed in time...',
+      imageUrl: 'secret.png',
+      tags: ['Unfathomable horrors', 'Darkness', 'Anguish'],
+      additionalInfo: 'Extreme Racism Project was a multi-year effort with long lasting socio-economical implications. Results to be with you and many otherssoon!',
       expanded: false
     },
   ];
