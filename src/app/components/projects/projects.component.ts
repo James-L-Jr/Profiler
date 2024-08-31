@@ -44,7 +44,7 @@ export class ProjectsComponent {
       description: 'Details of this project may be unvealed in time...',
       imageUrl: 'secret.png',
       tags: ['Unfathomable horrors', 'Darkness', 'Anguish'],
-      additionalInfo: 'Extreme Racism Project was a multi-year effort with long lasting socio-economical implications. Results to be with you and many otherssoon!',
+      additionalInfo: 'Extreme Racism Project was a multi-year effort with long lasting socio-economical implications. Results to be with you and many others soon!',
       expanded: false
     },
   ];
