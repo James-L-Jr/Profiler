@@ -16,8 +16,9 @@ export class HomeComponent {
   imagePath = environment.imagePath;
 
   constructor() {
-    document.documentElement.style.setProperty('--image-path', this.imagePath);
-    console.log('Production environment from file:', environment.imagePath);
-    console.log('Production environment from here:', this.imagePath);
+    const completeImagePath = `${environment.imagePath}banner2.png`;
+    document.documentElement.style.setProperty('--image-path', completeImagePath);
+    console.log('Image path from file:', environment.imagePath);
+    console.log('Image path from here:', this.imagePath);
   }
 }
