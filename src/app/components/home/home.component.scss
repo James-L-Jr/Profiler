@@ -73,7 +73,7 @@ section img {
 }
 
 .hero {
-  background-image: url(var(imagePath));
+  background-image: url(unquote("#{var(--image-path)}banner2.png"));
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
