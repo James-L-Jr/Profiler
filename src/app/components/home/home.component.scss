@@ -73,10 +73,10 @@ section img {
 }
 
 .hero {
-  background-image: url('./banner2.png');
-  background-size: cover; /* Ensure the image fits within the container */
+  background-image: url(var(imagePath));
+  background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; /* Prevent the image from repeating */
+  background-repeat: no-repeat;
   border-radius: 0 0 10px 10px;
   height: 200px;
   display: flex;

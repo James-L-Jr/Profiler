@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import {RouterLink} from "@angular/router";
+import { RouterLink } from "@angular/router";
+import { environment } from '../../../environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -10,6 +11,11 @@ import {RouterLink} from "@angular/router";
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
-export class HomeComponent {
 
+export class HomeComponent {
+  imagePath = environment.imagePath;
+
+  constructor() {
+    document.documentElement.style.setProperty('--image-path', this.imagePath);
+  }
 }
