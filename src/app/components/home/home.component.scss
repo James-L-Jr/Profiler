@@ -81,20 +81,13 @@ section img {
   min-height: 200px;
   display: flex;
   justify-content: center;
-}
 
-.hero {
-  background-image: url('banner2.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  // border-radius: 0 0 10px 10px;
-  padding-top: 0px;
-  margin-top: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
+  // background-size: contain;
+  // background-size: cover;
+  // overflow: auto;
+  // height: 100%;
+  // width: 100%;
+  // background-repeat: no-repeat;
 }
 
 .hero h1 {

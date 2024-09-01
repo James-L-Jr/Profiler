@@ -32,19 +32,35 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 export class ProjectsComponent {
   projects = [
     {
-      title: 'Racist Project',
-      description: 'Undisclosed efforts to fortify the class system within the united states',
-      imageUrl: 'undisclosed.png',
-      tags: ['Get Rich', 'Implement Power', 'Control'],
-      additionalInfo: 'This project was developed over the course of 3 months. It involved things the average person would never think about. Let\'s just say I think a little differently than most others.',
+      title: 'Portfolio Website - 2024',
+      description: 'Angular based portfolio website to demonstrate an accessible and stylized collection of personal and professional experiences.',
+      imageUrl: 'angular2.png',
+      tags: ['Angular', 'Spring Boot', 'MSSQL', 'HTML', 'SCSS', 'TypeScript'],
+      additionalInfo: 'Angular and Spring Boot portfolio website integrates seamlessly with MSSQL, ' +
+                      'leveraging Angular Material for UI and Spring Boot for RESTful services, JPA database interactions, ' +
+                      'and routing, ensuring a streamlined and scalable web solution.',
       expanded: false
     },
     {
-      title: 'Extreme Racism Project',
-      description: 'Details of this project may be unvealed in time...',
-      imageUrl: 'secret.png',
-      tags: ['Unfathomable horrors', 'Darkness', 'Anguish'],
-      additionalInfo: 'Extreme Racism Project was a multi-year effort with long lasting socio-economical implications. Results to be with you and many others soon!',
+      title: 'Plant Device Observability - 2024',
+      description: 'A near real-time health and performance observability platform for manufacturing plants in the U.S. and South America.',
+      imageUrl: 'grafana.png',
+      tags: ['Grafana', 'Victoria Metrics', 'PostgreSQL','VMagent', 'Kubernetes', 'Alerting'],
+      additionalInfo: 'Comprehensive web-hosted observability platform tailored for manufacturing plants, ' + 
+                      'featuring intuitive Grafana dashboards designed to present critical data clearly to plant workers. ' +
+                      'The system utilized VictoriaMetrics for efficient time-series data storage and querying, ensuring high performance and scalability. ' +
+                      'Deployment managed via Kubernetes, while PostgreSQL served as the database backbone for Grafana, enhancing data management and security.',
+      expanded: false
+    },
+    {
+      title: 'Azure Cloud Computing- 2023',
+      description: 'A near real-time health and performance observability platform for manufacturing plants in the U.S. and South America.',
+      imageUrl: 'grafana.png',
+      tags: ['Grafana', 'Victoria Metrics', 'PostgreSQL','VMagent', 'Kubernetes', 'Alerting'],
+      additionalInfo: 'Comprehensive web-hosted observability platform tailored for manufacturing plants, ' + 
+                      'featuring intuitive Grafana dashboards designed to present critical data clearly to plant workers. ' +
+                      'The system utilized VictoriaMetrics for efficient time-series data storage and querying, ensuring high performance and scalability. ' +
+                      'Deployment managed via Kubernetes, while PostgreSQL served as the database backbone for Grafana, enhancing data management and security.',
       expanded: false
     },
   ];
