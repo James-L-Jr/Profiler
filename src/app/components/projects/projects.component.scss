@@ -107,6 +107,7 @@
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
+    height: 100%; // The new stuff I added here
     
     &:hover {
       transform: translateY(-2px);
@@ -128,6 +129,7 @@
       height: 100%;
       display: flex;
       flex-direction: column;
+      flex-grow: 1; // The new stuff I added here
       padding-top: .01rem;
       overflow-y: auto;
     }
@@ -165,8 +167,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin-top: auto;
-    // margin-bottom: 1rem;
+    margin-top: auto; // The new stuff I added here
+    margin-bottom: 1rem; // The new stuff I added here
   }
   
   .tag {
