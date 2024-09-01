@@ -19,7 +19,9 @@
   <div class="projects-grid">
     <div class="project-card" *ngFor="let project of projects" [@expandCollapse]="project.expanded ? 'expanded' : 'collapsed'">
       <div class="project-content" [class.expanded]="project.expanded">
-        <div class="project-image" *ngIf="!project.expanded" [style.backgroundImage]="'url(' + project.imageUrl + ')'"></div>
+        <div class="project-image" *ngIf="!project.expanded">
+          <img [src]="project.imageUrl" [alt]="project.title">
+        </div>
         <h2 class="project-title">{{project.title}}</h2>
         <p class="project-description">{{project.description}}</p>
         <div class="project-tags" *ngIf="!project.expanded">
