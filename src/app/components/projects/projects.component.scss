@@ -135,7 +135,6 @@
   
   .project-image {
     width: 100%;
-    padding-top: 56.25%; // This maintains a 16:9 aspect ratio
     position: relative;
     overflow: hidden;
   }
@@ -146,8 +145,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; // This will make the image cover the area while maintaining aspect ratio
-    object-position: center; // This centers the image
+    object-fit: contain;
+    object-position: center;
   }
   
   .project-title {
