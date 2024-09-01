@@ -200,9 +200,9 @@
     border: none;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
-    margin-top: auto;
+    // margin-top: auto;
     // margin-bottom: .5rem;
-    // align-self: flex-start;
+    align-self: flex-end; //used to be flex-start
     
     &:hover {
       background-color: #34495e;
