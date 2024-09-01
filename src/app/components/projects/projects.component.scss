@@ -97,7 +97,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    max-width: 1200px;
+    max-width: 1300px;
     margin: 0 auto;
   }
   
@@ -123,7 +123,6 @@
   
   .project-content {
     padding: 1.5rem;
-    height: 100%;
     
     &.expanded {
       height: 100%;
@@ -195,6 +194,8 @@
     border: none;
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
+    margin-top: auto;
+    align-self: flex-start;
     
     &:hover {
       background-color: #34495e;
