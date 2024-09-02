@@ -27,7 +27,7 @@
         <div class="project-tags" *ngIf="!project.expanded">
           <span class="tag" *ngFor="let tag of project.tags">{{tag}}</span>
         </div>
-        <p>Detailed Desription:</p>
+        <p *ngIf="project.expanded">Detailed Desription:</p>
         <p class="additional-info" *ngIf="project.expanded">{{project.additionalInfo}}</p>
         <button class="project-button" (click)="toggleProject(project)">
           {{project.expanded ? 'Collapse' : 'View Details'}}
