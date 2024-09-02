@@ -57,7 +57,7 @@ export class ProjectsComponent {
       description: 'Automated accessibility testing on a web application for a fortune 500 company.',
       imageUrl: 'axe-core.png',
       tags: ['Typescript', 'Jest', 'Jest-axe','Node.js', 'Dev Tools'],
-      additionalInfo: 'Jest-oriented automated testing framework for an angular application to reach testing validation goals. ' + 
+      additionalInfo: 'Jest-oriented automated testing framework for an angular application reaching testing validation goals. ' + 
                       'Established test beds to simulate application environments and perform unit and accessibility testing. ' +
                       'Axe-core integration via Jest-axe to verify compliance wtih WCAG standards.',
       expanded: false
