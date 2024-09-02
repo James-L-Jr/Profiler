@@ -100,33 +100,54 @@
     max-width: 1300px;
     margin: 0 auto;
   }
-  
-  .project-card {
-    background-color: #fff;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-    height: 100%; // The new stuff I added here
-    
-    &:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    }
 
-    &.expanded {
-      height: auto;
-      max-height: 80vh;
-      display: flex;
-      flex-direction: column;
-    }
+  .project-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 3.5rem; // Space for the button
+    box-sizing: border-box;
   }
   
+  // .project-card {
+  //   background-color: #fff;
+  //   border-radius: 8px;
+  //   overflow: hidden;
+  //   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  //   transition: all 0.3s ease;
+  //   height: 100%; // The new stuff I added here
+    
+  //   &:hover {
+  //     transform: translateY(-2px);
+  //     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  //   }
+
+  //   &.expanded {
+  //     height: auto;
+  //     max-height: 80vh;
+  //     display: flex;
+  //     flex-direction: column;
+  //   }
+  // }
+  
   .project-content {
+    position: relative;
     flex: 1;
     display: flex;
     flex-direction: column;
-    overflow-y: auto; // Allow scrolling if content exceeds card height
+    padding: 1.5rem;
+    margin-bottom: .3rem;
+    
+    &.expanded {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      padding-top: .01rem;
+      margin-bottom: .3rem;
+      overflow-y: auto;
+    }
   }
 
   .project-image {
