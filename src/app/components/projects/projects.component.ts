@@ -36,9 +36,9 @@ export class ProjectsComponent {
       description: 'Angular based portfolio website to demonstrate an accessible and stylized collection of personal and professional experiences.',
       imageUrl: 'angular2.png',
       tags: ['Angular', 'Spring Boot', 'MSSQL', 'HTML', 'SCSS', 'TypeScript', 'Insomnia'],
-      additionalInfo: 'Angular and Spring Boot portfolio website integrates seamlessly with MSSQL, ' +
-                      'leveraging Angular Material for UI and Spring Boot for RESTful services, JPA database interactions, ' +
-                      'and routing, ensuring a streamlined and scalable web solution.',
+      additionalInfo: 'Angular and Spring Boot portfolio website integrating seamlessly with MSSQL. ' +
+                      'Leverages Angular Material for UI and Spring Boot for RESTful services, JPA database interactions, ' +
+                      'and routing, ensuring a streamlined and scalable web solution for building web portfolios.',
       expanded: false
     },
     {
@@ -54,6 +54,16 @@ export class ProjectsComponent {
     },
     {
       title: 'Assessibility Testing - 2024',
+      description: 'Automated accessibility testing on a web application for a fortune 500 company.',
+      imageUrl: 'axe-core.png',
+      tags: ['Typescript', 'Jest', 'Jest-axe','Node.js', 'Dev Tools'],
+      additionalInfo: 'Jest-oriented automated testing framework for an angular application reaching testing validation goals. ' + 
+                      'Established test beds to simulate application environments and perform unit and accessibility testing. ' +
+                      'Axe-core integration via Jest-axe to verify compliance wtih WCAG standards.',
+      expanded: false
+    },
+    {
+      title: 'Victoria Metrics Research - 2024',
       description: 'Automated accessibility testing on a web application for a fortune 500 company.',
       imageUrl: 'axe-core.png',
       tags: ['Typescript', 'Jest', 'Jest-axe','Node.js', 'Dev Tools'],
