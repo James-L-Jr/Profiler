@@ -46,9 +46,9 @@ export class ProjectsComponent {
       description: 'A near real-time health and performance observability platform for manufacturing plants in the U.S. and South America.',
       imageUrl: 'grafana.png',
       tags: ['Grafana', 'Victoria Metrics', 'PostgreSQL','VMagent', 'Kubernetes', 'Alerting'],
-      additionalInfo: 'Robust web-hosted observability platform tailored for manufacturing plants, ' + 
-                      'featuring more than 24 intuitive Grafana dashboards and 200 data visualizations designed to present critical data clearly to plant workers. ' +
-                      'The system utilized a well-tuned VictoriaMetrics configuration for efficient time-series data storage and querying, ensuring high performance and scalability. ' +
+      additionalInfo: 'Robust web-hosted observability platform tailored for manufacturing plants. ' + 
+                      'Contributed to more than ten intuitive Grafana dashboards and 100 data visualizations designed to present critical data clearly to plant workers. ' +
+                      'Utilized a well-tuned VictoriaMetrics configuration for efficient time-series data storage and querying, ensuring high performance and scalability. ' +
                       'Deployment managed via Kubernetes, while PostgreSQL served as the database backbone for Grafana, enhancing data management and security.',
       expanded: false
     },
