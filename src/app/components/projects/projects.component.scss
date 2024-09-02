@@ -111,7 +111,6 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    // padding-bottom: 1.0rem;
     box-sizing: border-box;
 
     &:hover {
@@ -125,27 +124,6 @@
       flex-direction: column;
     }
   }
-  
-  // .project-card {
-  //   background-color: #fff;
-  //   border-radius: 8px;
-  //   overflow: hidden;
-  //   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  //   transition: all 0.3s ease;
-  //   height: 100%; // The new stuff I added here
-    
-  //   &:hover {
-  //     transform: translateY(-2px);
-  //     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  //   }
-
-  //   &.expanded {
-  //     height: auto;
-  //     max-height: 80vh;
-  //     display: flex;
-  //     flex-direction: column;
-  //   }
-  // }
   
   .project-content {
     position: relative;
@@ -161,8 +139,6 @@
       height: 100%;
       display: flex;
       flex-direction: column;
-      // flex-grow: 1;
-      // padding-top: .01rem;
       margin-bottom: .3rem;
       overflow-y: auto;
     }
@@ -200,8 +176,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin-top: auto; // The new stuff I added here
-    margin-bottom: .3rem; // The new stuff I added here
+    margin-top: auto;
+    margin-bottom: .3rem;
   }
   
   .tag {
