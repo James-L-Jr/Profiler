@@ -95,9 +95,9 @@
   
   .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 2rem;
-    max-width: 1350px;
+    max-width: 1400px;
     margin: 0 auto;
   }
 
@@ -149,7 +149,6 @@
     padding-top: 56.25%;
     position: relative;
     overflow: hidden;
-    margin-bottom: 0rem;
   }
   
   .project-image img {
@@ -166,6 +165,7 @@
     font-size: 1.5rem;
     color: #34495e;
     margin-bottom: 0.5rem;
+    margin-top: 0rem;
   }
   
   .project-description {
