@@ -21,6 +21,7 @@
       <div class="project-content" [class.expanded]="project.expanded">
         <div class="project-image" *ngIf="!project.expanded">
           <img [src]="project.imageUrl" [alt]="project.title">
+          <p class="debug-info">Image URL: {{project.imageUrl}}</p>
         </div>
         <h2 class="project-title">{{project.title}}</h2>
         <p class="project-description">{{project.description}}</p>
