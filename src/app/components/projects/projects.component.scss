@@ -95,7 +95,7 @@
   
   .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 2rem;
     max-width: 1300px;
     margin: 0 auto;
@@ -157,18 +157,8 @@
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     object-position: center;
-  }
-
-  .debug-info {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    background: rgba(0,0,0,0.5);
-    color: white;
-    padding: 5px;
-    font-size: 12px;
   }
   
   .project-title {
