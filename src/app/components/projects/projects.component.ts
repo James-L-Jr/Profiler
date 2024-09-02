@@ -53,14 +53,13 @@ export class ProjectsComponent {
       expanded: false
     },
     {
-      title: 'Assessibility testing - 2024',
+      title: 'Assessibility Testing - 2024',
       description: 'Automated accessibility testing on a web application for a fortune 500 company.',
       imageUrl: 'axe-core.png',
-      tags: ['Javascript', 'Jest', 'Jest-axe','Node.js', 'Dev Tools'],
-      additionalInfo: 'Comprehensive singl-e-click pipelines for Azure Cloud deployment and CI/CD tools.' + 
-                      'SonarQube, Fortify, Open Source Scanning software implemented with scheduled automation tasks. ' +
-                      'Custom control over the environment used, approval workflow, and enhanced logging by environment. ' +
-                      'Apply application settings from a secure vault to the Azure service simultaneously with deployment.',
+      tags: ['Typescript', 'Jest', 'Jest-axe','Node.js', 'Dev Tools'],
+      additionalInfo: 'Jest-oriented automated testing framework for an angular application to reach testing validation goals. ' + 
+                      'Established test beds to simulate application environments and perform unit and accessibility testing. ' +
+                      'Axe-core integration via Jest-axe to verify compliance wtih WCAG standards.',
       expanded: false
     },
     {
@@ -68,7 +67,7 @@ export class ProjectsComponent {
       description: 'Adopt CI/CD automation processes for an application with an invested $50 million in support of manufacturing operations.',
       imageUrl: 'azure.png',
       tags: ['Azure DevOps', 'Azure Cloud', 'Azure App Service','Azure CLI', 'YAML', 'PowerShell'],
-      additionalInfo: 'Comprehensive single-click pipelines for Azure Cloud deployment and CI/CD tools.' + 
+      additionalInfo: 'Comprehensive single-click pipelines for Azure Cloud deployment and CI/CD tools. ' + 
                       'SonarQube, Fortify, Open Source Scanning software implemented with scheduled automation tasks. ' +
                       'Custom control over the environment used, approval workflow, and enhanced logging by environment. ' +
                       'Apply application settings from a secure vault to the Azure service simultaneously with deployment.',
