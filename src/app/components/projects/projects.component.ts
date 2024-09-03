@@ -65,7 +65,7 @@ export class ProjectsComponent {
     {
       title: 'Victoria Metrics Research - 2024',
       description: 'Upgrade Victoria Metrics to a more effective and efficient time-series database.',
-      imageUrl: 'kube.png',
+      imageUrl: 'kubernetes.png',
       tags: ['Kubernetes', 'Victoria Metrics', 'VMagent', 'Azure pipelines', 'Microsoft Excel'],
       additionalInfo: 'Provide a proof of concept implementation of the VictoriaMetrics cluster version as part of efforts to explore upgrades to time-series database systems. ' + 
                       'In-depth research of best practices and implementation strategies for the deployment and cluster configuration to load balance a scalable, high-performance solution. ' +
@@ -88,7 +88,7 @@ export class ProjectsComponent {
     {
       title: 'Oracle Database Upgrade - 2023',
       description: 'Analyst for Oracle database upgrade efforts for a major U.S. bank.',
-      imageUrl: 'jiralogo.png',
+      imageUrl: 'jira.png',
       tags: ['Powerpoint', 'Jira', 'Slack'],
       additionalInfo: 'Work closely with a team of testers, developers, and business stakeholders to validate migration progress. ' + 
                       'Maintain a regular business package that details iterative statuses in regards to project efforts. ' +
