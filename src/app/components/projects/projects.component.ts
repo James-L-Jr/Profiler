@@ -86,13 +86,24 @@ export class ProjectsComponent {
       expanded: false
     },
     {
-      title: 'Oracle Database Upgrade - 2023',
+      title: 'Oracle Database Upgrade - 2022',
       description: 'Analyst for Oracle database upgrade efforts for a major U.S. bank.',
       imageUrl: 'jira.png',
       tags: ['Powerpoint', 'Jira', 'Slack'],
       additionalInfo: 'Work closely with a team of testers, developers, and business stakeholders to validate migration progress. ' + 
                       'Maintain a regular business package that details iterative statuses in regards to project efforts. ' +
                       'Validate results of smoke and regression test suites and determine root causes of defects.',
+      expanded: false
+    },
+    {
+      title: 'Cyber Maturity Audit - 2021',
+      description: 'Assist a local non-profit determine their cyber maturity in collaboration with MITRE corp. and UTSA.',
+      imageUrl: 'CIS.png',
+      tags: ['CIS controls', 'Adobe Express'],
+      additionalInfo: 'Comprehensive evaluation of the IT infrastructure, risks, and existing controls of an organization, adhering to the CIS Controls for Small-Medium Enterprises guidelines within client comfort level. ' +
+                      'Worked closely with clients to understand their processes and gather essential information, ensuring a thorough and accurate assessment.' +
+                      'Created customer friendly documentation and resources explaining findings in detail and included recommendations of action for organizational officials and MITRE corp., ' +
+                      'to use in a follow-up project.',
       expanded: false
     },
   ];
