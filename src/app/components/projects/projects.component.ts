@@ -130,19 +130,20 @@ export class ProjectsComponent {
     {
       title: 'Capture the Flag - 2021',
       description: 'Exploit a 32 bit and 64 bit linux system to obtain a secret.',
-      imageUrl: 'wireshark.png',
-      tags: ['Wireshark', 'Sleuth Kit', 'Microsoft Word'],
-      additionalInfo: 'Deep dive into the network and system logs to establish the entry point and activities of an intrusion. ' +
-                      'Reconstructed timeline of events and actions taken by the intruders.' +
-                      'Analysis of introduced malware to understand the functionality and related impacts. ' +
-                      'Comprehensive incident report detailing the findings and all known details of the source.',
+      imageUrl: 'python.png',
+      tags: ['GDB Debugger', 'Python', 'C', 'Linux'],
+      additionalInfo: 'Obtain a shell by exploiting buffer overflow and string format vulnerabilities in a C program, ' +
+                      'tailoring payloads for 32-bit and 64-bit Linux systems respectively. ' +
+                      'Employed GDB to examine how memory is allocated and where control data should be located. ' +
+                      'Utilize Python scripts to inject arbitrary code into calculated memory address ranges with proper NOP sliding, buffer padding, and manipulation of return addresses . ' +
+                      'Use shell knowledge to retrieve a secret flag from the systems. Document the procedures executed and findings from the system exploitation.',
       expanded: false
     },
     {
       title: 'Harden Linux System - 2021',
       description: 'Harden a Linux system as an administrator improving security.',
       imageUrl: 'nftables.png',
-      tags: ['nftables', 'Debian', 'Snort', 'Hostpapd'],
+      tags: ['nftables', 'Debian', 'Snort', 'Hostapd'],
       additionalInfo: 'Established the network security of a Debian Linux environment by configuring firewalls, network management, and event monitoring. ' +
                       'Robust nftable chain and table rulesets created for packet acceptance and filtering rules. ' +
                       'Created an access point with hostapd to allow managed access to the system. ' +
