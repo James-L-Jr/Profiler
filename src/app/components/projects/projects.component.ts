@@ -98,7 +98,7 @@ export class ProjectsComponent {
     {
       title: 'Custom Discord Bot - 2021',
       description: 'Develop a bot to gameify chat interactions for the Discord application.',
-      imageUrl: 'python.png',
+      imageUrl: 'python2.png',
       tags: ['Python 3', 'Discord API', 'VScode'],
       additionalInfo: 'Python-based bot that passively interacts with users on a private server through chats to enhance user experience. ' +
                       'Awards points and achievements based on user activity and maintains several leaderboards to gamify user engagement. ' +
@@ -130,12 +130,12 @@ export class ProjectsComponent {
     {
       title: 'Capture the Flag - 2021',
       description: 'Exploit a 32 bit and 64 bit linux system to obtain a secret.',
-      imageUrl: 'python.png',
+      imageUrl: 'python2.png',
       tags: ['GDB Debugger', 'Python', 'C', 'Linux'],
       additionalInfo: 'Obtain a shell by exploiting buffer overflow and string format vulnerabilities in a C program, ' +
                       'tailoring payloads for 32-bit and 64-bit Linux systems respectively. ' +
                       'Employed GDB to examine how memory is allocated and where control data should be located. ' +
-                      'Utilize Python scripts to inject arbitrary code into calculated memory address ranges with proper NOP sliding, buffer padding, and manipulation of return addresses . ' +
+                      'Utilize Python scripts to inject arbitrary code into calculated memory address ranges with proper NOP sliding, buffer padding, and manipulation of return addresses. ' +
                       'Use shell knowledge to retrieve a secret flag from the systems. Document the procedures executed and findings from the system exploitation.',
       expanded: false
     },
