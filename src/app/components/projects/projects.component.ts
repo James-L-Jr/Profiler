@@ -101,7 +101,7 @@ export class ProjectsComponent {
       imageUrl: 'python.png',
       tags: ['Python 3', 'Discord API', 'VScode'],
       additionalInfo: 'Python-based bot that passively interacts with users on a private server through chats to enhance user experience. ' +
-                      'Awards points and achievements based on user activity and maintains several leaderboards to gamify user engagement.' +
+                      'Awards points and achievements based on user activity and maintains several leaderboards to gamify user engagement. ' +
                       'Interactive commands that allows users to have the bot generate related graphs using Matplotlib and lists from CSV files.',
       expanded: false
     },
@@ -111,7 +111,7 @@ export class ProjectsComponent {
       imageUrl: 'cisLogo.png',
       tags: ['CIS controls', 'Adobe Express'],
       additionalInfo: 'Comprehensive evaluation of the IT infrastructure, risks, and existing controls of an organization, adhering to the CIS Controls for Small-Medium Enterprises guidelines within client comfort level. ' +
-                      'Worked closely with clients to understand their processes and gather essential information, ensuring a thorough and accurate assessment.' +
+                      'Worked closely with clients to understand their processes and gather essential information, ensuring a thorough and accurate assessment. ' +
                       'Created customer friendly documentation and resources explaining findings in detail and included recommendations of action for organizational officials and MITRE corp., ' +
                       'to use in a follow-up project.',
       expanded: false
@@ -122,7 +122,7 @@ export class ProjectsComponent {
       imageUrl: 'wireshark.png',
       tags: ['Wireshark', 'Sleuth Kit', 'Microsoft Word'],
       additionalInfo: 'Deep dive into the network and system logs to establish the entry point and activities of an intrusion. ' +
-                      'Reconstructed timeline of events and actions taken by the intruders.' +
+                      'Reconstructed timeline of events and actions taken by the intruders. ' +
                       'Analysis of introduced malware to understand the functionality and related impacts. ' +
                       'Comprehensive incident report detailing the findings and all known details of the source.',
       expanded: false
@@ -144,7 +144,7 @@ export class ProjectsComponent {
       imageUrl: 'nftables.png',
       tags: ['nftables', 'Debian', 'Snort', 'Hostpapd'],
       additionalInfo: 'Established the network security of a Debian Linux environment by configuring firewalls, network management, and event monitoring. ' +
-                      'Robust nftable chain and table rulesets created for packet acceptance and filtering rules.' +
+                      'Robust nftable chain and table rulesets created for packet acceptance and filtering rules. ' +
                       'Created an access point with hostapd to allow managed access to the system. ' +
                       'Traffic control (tc) for effective bandwidth prioritization. ' +
                       'Snort configuration to monitor and log traffic events as well email alerts for specific network incidents.',
