@@ -64,7 +64,7 @@ export class ProjectsComponent {
     },
     {
       title: 'Victoria Metrics Research - 2024',
-      description: 'Upgrade Victoria Metrics to a more effective and efficient time-series database.',
+      description: 'Explore a Victoria Metrics upgrade to a more effective and efficient time-series database.',
       imageUrl: 'kubernetes.png',
       tags: ['Kubernetes', 'Victoria Metrics', 'VMagent', 'Azure pipelines', 'Microsoft Excel', 'Teams'],
       additionalInfo: 'Provide a proof of concept implementation of the VictoriaMetrics cluster version as part of efforts to explore upgrades to time-series database systems. ' + 
