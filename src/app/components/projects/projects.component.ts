@@ -98,7 +98,7 @@ export class ProjectsComponent {
     {
       title: 'Cyber Maturity Audit - 2021',
       description: 'Assist a local non-profit determine their cyber maturity in collaboration with MITRE corp. and UTSA.',
-      imageUrl: 'CIS.png',
+      imageUrl: 'cis.png',
       tags: ['CIS controls', 'Adobe Express'],
       additionalInfo: 'Comprehensive evaluation of the IT infrastructure, risks, and existing controls of an organization, adhering to the CIS Controls for Small-Medium Enterprises guidelines within client comfort level. ' +
                       'Worked closely with clients to understand their processes and gather essential information, ensuring a thorough and accurate assessment.' +
