@@ -67,7 +67,7 @@ export class AboutComponent {
         gpa: '3.7'
       }
     ],
-    skills: ['Java', 'Python', 'JavaScript', 'Bash', 'Angular', 'Git', 'Kubernetes', 'Docker', 'Ansible', 'Azure', 'CI/CD Tools', 'Postgres', 'SQL', 'Grafana', 'Agile', 'Linux']
+    skills: ['Java', 'JavaScript', 'Python', 'Bash', 'PowerShell', 'Ansible', 'Angular', 'Kubernetes', 'Docker', 'Azure', 'CI/CD Tools', 'Git', 'Linux', 'Postgres', 'SQL', 'Grafana', 'Agile']
   };
 
   getResumeDataKeys(): string {
@@ -75,7 +75,7 @@ export class AboutComponent {
   }
 }
 
-
+// WTF github pages doesn't support the HttpclientModule. Commenting for now...
 // export class AboutComponent implements OnInit {
 //   resumeData: any;
 
