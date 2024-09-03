@@ -106,6 +106,17 @@ export class ProjectsComponent {
                       'to use in a follow-up project.',
       expanded: false
     },
+    {
+      title: 'Cyber Forensic Analysis - 2021',
+      description: 'Examine a compromised UTSA affiliated honeypot system.',
+      imageUrl: 'wireshark.png',
+      tags: ['Wireshark', 'Sleuth Kit', 'Microsoft Word'],
+      additionalInfo: 'Deep dive into the network and system logs to establish the entry point and activities of an intrusion. ' +
+                      'Reconstructed timeline of events and actions taken by the intruders.' +
+                      'Analysis of introduced malware to understand the functionality and related impacts. ' +
+                      'Comprehensive incident report detailing the findings and all known details of the source.',
+      expanded: false
+    },
   ];
 
   toggleProject(project: any) {
