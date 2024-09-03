@@ -90,9 +90,19 @@ export class ProjectsComponent {
       description: 'Analyst for Oracle database upgrade efforts for a major U.S. bank.',
       imageUrl: 'jira.png',
       tags: ['Powerpoint', 'Jira', 'Slack'],
-      additionalInfo: 'Work closely with a team of testers, developers, and business stakeholders to validate migration progress. ' + 
+      additionalInfo: 'Work closely with a team of testers, developers, and business stakeholders to validate the migration progress. ' + 
                       'Maintain a regular business package that details iterative statuses in regards to project efforts. ' +
                       'Validate results of smoke and regression test suites and determine root causes of defects.',
+      expanded: false
+    },
+    {
+      title: 'Custom Discord Bot - 2021',
+      description: 'Develop a bot to gameify chat interactions for the Discord application.',
+      imageUrl: 'python.png',
+      tags: ['Python 3', 'Discord API', 'VScode'],
+      additionalInfo: 'Python-based bot that passively interacts with users on a private server through chats to enhance user experience. ' +
+                      'Awards points and achievements based on user activity and maintains several leaderboards to gamify user engagement.' +
+                      'Interactive commands that allows users to have the bot generate related graphs using Matplotlib and lists from CSV files.',
       expanded: false
     },
     {
@@ -115,6 +125,29 @@ export class ProjectsComponent {
                       'Reconstructed timeline of events and actions taken by the intruders.' +
                       'Analysis of introduced malware to understand the functionality and related impacts. ' +
                       'Comprehensive incident report detailing the findings and all known details of the source.',
+      expanded: false
+    },
+    {
+      title: 'Capture the Flag - 2021',
+      description: 'Exploit a 32 bit and 64 bit linux system to obtain a secret.',
+      imageUrl: 'wireshark.png',
+      tags: ['Wireshark', 'Sleuth Kit', 'Microsoft Word'],
+      additionalInfo: 'Deep dive into the network and system logs to establish the entry point and activities of an intrusion. ' +
+                      'Reconstructed timeline of events and actions taken by the intruders.' +
+                      'Analysis of introduced malware to understand the functionality and related impacts. ' +
+                      'Comprehensive incident report detailing the findings and all known details of the source.',
+      expanded: false
+    },
+    {
+      title: 'Harden Linux System - 2021',
+      description: 'Harden a Linux system as an administrator improving security.',
+      imageUrl: 'nftables.png',
+      tags: ['nftables', 'Debian', 'Snort', 'Hostpapd'],
+      additionalInfo: 'Established the network security of a Debian Linux environment by configuring firewalls, network management, and event monitoring. ' +
+                      'Robust nftable chain and table rulesets created for packet acceptance and filtering rules.' +
+                      'Created an access point with hostapd to allow managed access to the system. ' +
+                      'Traffic control (tc) for effective bandwidth prioritization. ' +
+                      'Snort configuration to monitor and log traffic events as well email alerts for specific network incidents.',
       expanded: false
     },
   ];
