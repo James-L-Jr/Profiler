@@ -15,8 +15,8 @@ export class AboutComponent {
     name: 'James Logan',
     title: 'Software Engineer',
     contact: {
-      email: 'jamestest@test.com',
-      phone: '(123) 456-7890',
+      email: 'james.f.logan2@gmail.com',
+      phone: 'Available upon request',
       location: 'Austin, TX'
     },
     summary: 'Experienced software engineer with a passion for creating secure and efficient applications. ' +

@@ -100,7 +100,7 @@ export class ProjectsComponent {
       description: 'Develop a bot to gameify chat interactions for the Discord application.',
       imageUrl: 'python2.png',
       tags: ['Python 3', 'Discord API', 'VScode'],
-      additionalInfo: 'Python-based bot that passively interacts with users on a private server through chats to enhance user experience. ' +
+      additionalInfo: 'Python-based bot that passively interacts with users on a private server through chats to enhance the user experience. ' +
                       'Awards points and achievements based on user activity and maintains several leaderboards to gamify user engagement. ' +
                       'Interactive commands that allows users to have the bot generate related graphs using Matplotlib and lists from CSV files.',
       expanded: false
