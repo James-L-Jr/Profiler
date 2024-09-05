@@ -1,5 +1,3 @@
-<!DOCTYPE html>
-<html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,25 +10,22 @@
   <nav>
     <ul>
       <li><a routerLink="/home">Home</a></li>
-      <li><a routerLink="/home">About</a></li>
-      <li><a routerLink="/home">Technologies</a></li>
-      <li><a routerLink="/home">Projects</a></li>
+      <li><a routerLink="/about">About</a></li>
+      <li><a routerLink="/technologies">Technologies</a></li>
+      <li><a routerLink="/projects">Projects</a></li>
     </ul>
   </nav>
 </header>
 
-<section class="hero">
-  <div class="container">
-    <h1></h1>
-  </div>
+<section class="container_banner">
 </section>
 
 <section>
-  <div class="container">
-    <h2>Explore Profiler</h2>
-    <p>Profiler is where you'll find quick access to James' portfolio.<br>Navigate through my pages as you please.</p>
-    <p><br>Click below to begin!</p>
-    <a href="experiments.html">
+  <div class="container2">
+    <h2>Explore ProfileMe</h2>
+    <p>ProfileMe is where you'll find quick access to James' portfolio.<br>Navigate through my pages as you please.</p>
+    <h3><br>Click below to begin!</h3>
+    <a [routerLink]="['/about']">
       <img src="glass2.png" alt="Image 2">
     </a>
   </div>
@@ -41,11 +36,13 @@
     <h2>Testimonials</h2>
     <div>
       <img src="rock.png" alt="Testimonial 1">
-      <p>"He learns anything you throw at him. Became our onsite sexologist in half a week."</p>
+      <p>"Exceeds expectations. It would be downright negligent to rate his performance similar to a bunch of people on the brink of being fired. Haha, as if that could ever happen!"</p>
+      <p>- A rock</p>
     </div>
     <div>
-      <img src="obama.png" alt="Testimonial 2">
-      <p>"Wish I could have him back here again. Nobody else around here tells racist jokes like that!"</p>
+      <img src="biden.png" alt="Testimonial 2">
+      <p>"I can't imagine a better person to have on my staff. I would have him in the White House if his current company wasn't so dedicated to talent retention... What network is this? Where am I?"</p>
+      <p>- Man I found walking outside my apartment</p>
     </div>
   </div>
 </section>
@@ -53,7 +50,7 @@
 <section>
   <div class="container">
     <h2>Site Feedback</h2>
-    <p>To submit feedback for improvements with Profiler, use the prompt below:</p>
+    <p>For inqueries or to submit feedback, use the prompt below:</p>
     <br>
     <form onsubmit="showDialog(event)">
       <p class="label">Name:</p>
@@ -72,28 +69,28 @@
     <div class="footer-content">
       <div class="footer-column">
         <h3>About</h3>
-        <p><a href="about.html">About Me</a></p>
-        <p><a href="technologies.html">Our Technologies</a></p>
-        <p><a href="about.html">Company History</a></p>
+        <p><a [routerLink]="['/about']">My Resume</a></p>
+        <p><a [routerLink]="['/technologies']">Technologies</a></p>
+        <p><a [routerLink]="['/projects']">Projects</a></p>
       </div>
       <div class="footer-column">
         <h3>Services</h3>
-        <p>Graphs</p>
-        <p>Websites</p>
+        <p>Data Science</p>
+        <p>Profile Builder</p>
         <p>Applications</p>
       </div>
       <div class="footer-column">
         <h3>Contact</h3>
         <p>Email: jamestest&#64;gmail.com</p>
-        <p>Phone: 800-456-7890</p>
-        <p>Address: Unfortunately not at home</p>
+        <p>Phone: 123-456-7890</p>
+        <p>Location: Austin, TX</p>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>&copy; 2023 Experiments™. All rights not reserved. Personality likeness is of no genuine indication of figures or their opinions.</p>
+      <p>&copy; 2024 ProfileMe™. All rights not reserved. Personality likeness is of no genuine indication of figures or their opinions.</p>
       <p>Data accuracy not guaranteed</p>
       <p><a href="#" class="footer-link" data-alert="We collect no data from our users. Usage of this site infers understanding of our terms of service.">Privacy Policy</a> |
-        <a href="#" class="footer-link" data-alert="Experiments claims no ownership over displayed assets from our web view. Experiments reserves rights under 'Fair Use.' Furthermore, the user understands this project is not sponsored or endorsed by any genuine company or identity.">Terms of Service</a>
+        <a href="#" class="footer-link" data-alert="ProfileMe claims no ownership over displayed assets from our web view. ProfileMe reserves rights under 'Fair Use.' Furthermore, the user understands this project is not sponsored or affiliated with any genuine company or identity.">Terms of Service</a>
       </p>
     </div>
   </div>
@@ -112,4 +109,3 @@
 </script>
 
 </body>
-</html>

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,13 +7,14 @@ body {
 }
 
 header {
-  background-color: #f2f2f2;
-  text-align: center;
+  background-color: #525252;
+  height: 25px;
+  padding: .75rem 0;
 }
 
 nav {
-  background-color: #525252;
-  padding: 10px;
+  margin: 0 auto;
+  padding: 0px;
 }
 
 nav ul {
@@ -24,22 +27,25 @@ nav ul {
 
 nav ul li {
   margin: 0 10px;
+  padding-top: 1px;
 }
 
 nav ul li a {
+  font-family: 'Roboto', sans-serif;
   color: #fff;
   text-decoration: none;
-  font-weight: bold;
-  padding: 5px;
+  font-size: 1.2rem;
+  padding: 10px;
   border-radius: 3px;
-}
-
-nav ul li a:hover {
-  background-color: #555;
+  padding-bottom: 10px;
+  border-radius: 3px;
+  &:hover, &.active {
+    background-color: #34495e;
+  }
 }
 
 section {
-  padding: 50px;
+  padding: 100px;
   background-color: #f9f9f9;
   text-align: center;
 }
@@ -64,22 +70,45 @@ section img {
 }
 
 .container {
-  max-width: 960px;
+  max-width: 1000px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
 }
 
-.hero {
-  background-image: url('/banner2.png');
-  background-size: cover; /* Ensure the image fits within the container */
+.container2 {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0px;
+
+  h3{
+    color: #333;
+  }
+
+  img {
+    max-width: 200px;
+    max-height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    &:hover {
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      transform: scale(1.05);
+    }
+  }
+}
+
+.container_banner {
+  background-image: url('banner3.png');
   background-position: center;
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  border-radius: 0 0 10px 10px;
-  height: 200px;
+  min-height: 150px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  color: #fff;
+
+  // background-size: contain;
+  // background-size: cover;
+  // overflow: auto;
+  // height: 100%;
+  // width: 100%;
+  // background-repeat: no-repeat;
 }
 
 .hero h1 {
@@ -140,7 +169,7 @@ section p.label {
 }
 
 section img {
-  max-width: 100px; /* Adjust the maximum width as desired */
+  max-width: 100px;
   height: auto;
   margin-top: 30px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -157,6 +186,7 @@ footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  padding-left: 150px;
 }
 
 .footer-column {
