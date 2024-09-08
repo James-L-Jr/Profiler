@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { RouterLink } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { PrivacyPolicyDialogComponent } from '../dialogs/privacy-policy-dialog/privacy-policy-dialog';
 import { TermsServiceDialogComponent } from '../dialogs/terms-service-dialog/terms-service-dialog';
 
@@ -8,7 +9,8 @@ import { TermsServiceDialogComponent } from '../dialogs/terms-service-dialog/ter
   selector: 'app-technologies',
   standalone: true,
   imports: [
-    RouterLink
+    RouterLink,
+    RouterModule
   ],
   templateUrl: './technologies.component.html',
   styleUrl: './technologies.component.scss'

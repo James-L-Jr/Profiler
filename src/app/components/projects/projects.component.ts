@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { PrivacyPolicyDialogComponent } from '../dialogs/privacy-policy-dialog/privacy-policy-dialog';
@@ -11,6 +12,7 @@ import { MatDialog, MatDialogModule } from '@angular/material/dialog';
   standalone: true,
   imports: [
     RouterLink,
+    RouterModule,
     CommonModule,
     MatDialogModule
   ],

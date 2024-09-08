@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterLink } from "@angular/router";
+import { RouterModule } from "@angular/router";
 import { environment } from '../../../environments/environment';
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 import { ProfileService } from '../../services/ProfileService';
@@ -20,6 +21,7 @@ interface Profile {
   standalone: true,
   imports: [
     RouterLink,
+    RouterModule,
     FormsModule,
     CommonModule,
     MatDialogModule

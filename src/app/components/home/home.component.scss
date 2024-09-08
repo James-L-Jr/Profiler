@@ -39,6 +39,7 @@ nav ul li a {
   border-radius: 3px;
   padding-bottom: 10px;
   border-radius: 3px;
+  
   &:hover, &.active {
     background-color: #34495e;
   }
@@ -249,18 +250,15 @@ section img {
 }
 
 .container_banner {
-  background-image: url('banner3.png');
+  background-image: url('banner.png');
+  background-color: #525252;
   background-position: center;
   min-height: 150px;
   display: flex;
-  justify-content: center;
-
-  // background-size: contain;
-  // background-size: cover;
-  // overflow: auto;
-  // height: 100%;
-  // width: 100%;
-  // background-repeat: no-repeat;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 150px;
+  padding-top: -1px;
 }
 
 .hero h1 {
