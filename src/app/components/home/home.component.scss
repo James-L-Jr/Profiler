@@ -39,7 +39,7 @@ nav ul li a {
   border-radius: 3px;
   padding-bottom: 10px;
   border-radius: 3px;
-  
+
   &:hover, &.active {
     background-color: #34495e;
   }
@@ -215,6 +215,67 @@ section img {
         }
       }
     }
+  }
+}
+
+.background-story {
+  background-color: #f5f5f5;
+  padding: 40px 0 60px;
+  
+  .container {
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  h2 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+  .journey-timeline {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .timeline-item {
+    text-align: center;
+  }
+
+  .timeline-icon {
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  .timeline-icon-2 {
+    width: 93px;
+    height: 93px;
+    object-fit: contain;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+  }
+
+  .timeline-arrow {
+    font-size: 2rem;
+    color: #666;
+    margin: 0 -450px;
+  }
+
+  .journey-description {
+    color: #666;
+    line-height: 1.6;
+    font-size: 1.1rem;
+    text-align: justify;
+    margin-bottom: 20px;
   }
 }
 
