@@ -20,11 +20,23 @@
 <section class="container_banner">
 </section>
 
+<section class="profile-selector">
+  <div class="container-profile">
+    <label for="profile-select">Select a profile:</label>
+    <select id="profile-select" [(ngModel)]="selectedProfileId" (ngModelChange)="onProfileSelect()">
+      <!-- <option [ngValue]="null">Select a profile</option> -->
+      <option *ngFor="let profile of profiles" [ngValue]="profile.id">{{ profile.name }}</option>
+    </select>
+    <span class="or-text">or</span>
+    <button (click)="openCreateProfileModal()">Create a profile</button>
+  </div>
+</section>
+
 <section>
   <div class="container2">
     <h2>Explore ProfileMe</h2>
-    <p>ProfileMe is where you'll find quick access to James' portfolio.<br>Navigate through my pages as you please.</p>
-    <h3><br>Click below to begin!</h3>
+    <p>ProfileMe is where you'll find quick access to available users' portfolios.<br>Navigate through {{ profileName }}'s pages as you please.</p>
+    <p class="custom-h3">Click below to begin!</p>
     <a [routerLink]="['/about']">
       <img src="glass2.png" alt="Image 2">
     </a>
@@ -50,12 +62,26 @@
   </div>
 </section>
 
+<div *ngIf="showCreateProfileModal" class="modal-overlay">
+  <div class="modal">
+    <div class="modal-content">
+      <h2>Create New Profile</h2>
+      <input [(ngModel)]="newProfileName" placeholder="Enter profile name">
+      <div class="modal-buttons">
+        <button (click)="closeCreateProfileModal()">Cancel</button>
+        <button (click)="showNotAuthorizedDialog()">Create</button>
+        <!-- <button (click)="createProfile()">Create</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
 <section>
   <div class="container">
     <h2>Site Feedback</h2>
     <p>For inqueries or to submit feedback, use the prompt below:</p>
     <br>
-    <form onsubmit="showDialog(event)">
+    <form (ngSubmit)="showDialog($event)">
       <p class="label">Name:</p>
       <input type="text" id="requester" name="requester" required>
       <br><br>
@@ -102,7 +128,6 @@
 
 <script>
   var learnMoreLinks = document.querySelectorAll('.footer-link');
-
   learnMoreLinks.forEach(function(link) {
     link.addEventListener('click', function(event) {
       event.preventDefault();
