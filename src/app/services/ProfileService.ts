@@ -9,17 +9,28 @@ import { environment } from '../../environments/environment';
 export class ProfileService {
   private apiUrl = `${environment.apiUrl}/profiles`;
 
-  constructor(private http: HttpClient) { }
-
   getAllProfiles(): Observable<any[]> {
-    return this.http.get<any[]>(this.apiUrl);
-  }
-  
-  searchProfiles(query: string): Observable<any[]> {
-    return this.http.get<any[]>(`${this.apiUrl}/search`, { params: { query } });
+    return new Observable<any[]>(observer => {
+      observer.next([{ id: 1, name: "James Logan" }]);
+      observer.complete();
+    });
   }
 
-  createProfile(profile: { name: string }): Observable<any> {
-    return this.http.post<any>(this.apiUrl, profile);
+  createProfile(): void {
+    console.log('createProfile called');
   }
+
+  // constructor(private http: HttpClient) { }
+
+  // getAllProfiles(): Observable<any[]> {
+  //   return this.http.get<any[]>(this.apiUrl);
+  // }
+  
+  // searchProfiles(query: string): Observable<any[]> {
+  //   return this.http.get<any[]>(`${this.apiUrl}/search`, { params: { query } });
+  // }
+
+  // createProfile(profile: { name: string }): Observable<any> {
+  //   return this.http.post<any>(this.apiUrl, profile);
+  // }
 }

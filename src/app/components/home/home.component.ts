@@ -31,7 +31,7 @@ interface Profile {
 export class HomeComponent implements OnInit {
   profiles: Profile[] = [];
   selectedProfileId: number | null = null;
-  profileName: string = 'Guest';
+  profileName: string = 'James Logan';
   showCreateProfileModal: boolean = false;
   newProfileName: string = '';
 
@@ -102,21 +102,21 @@ export class HomeComponent implements OnInit {
     this.newProfileName = '';
   }
 
-  createProfile(): void {
-    if (this.newProfileName.trim()) {
-      this.profileService.createProfile({ name: this.newProfileName }).subscribe(
-        (newProfile: Profile) => {
-          this.profiles.push(newProfile);
-          this.selectedProfileId = newProfile.id;
-          this.updateProfileName();
-          this.closeCreateProfileModal();
-        },
-        error => {
-          console.error('Error creating profile:', error);
-        }
-      );
-    }
-  }
+  // createProfile(): void {
+  //   if (this.newProfileName.trim()) {
+  //     this.profileService.createProfile({ name: this.newProfileName }).subscribe(
+  //       (newProfile: Profile) => {
+  //         this.profiles.push(newProfile);
+  //         this.selectedProfileId = newProfile.id;
+  //         this.updateProfileName();
+  //         this.closeCreateProfileModal();
+  //       },
+  //       error => {
+  //         console.error('Error creating profile:', error);
+  //       }
+  //     );
+  //   }
+  // }
 
   toggleProject(project: any) {
     project.expanded = !project.expanded;
