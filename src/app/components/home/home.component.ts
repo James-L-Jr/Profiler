@@ -7,6 +7,8 @@ import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { NotAuthorizedDialogComponent } from '../dialogs/not-authorized-dialog/not-authorized-dialog';
 import { SubmissionCompleteDialogComponent } from '../dialogs/submission-complete-dialog/submission-complete-dialog';
+import { PrivacyPolicyDialogComponent } from '../dialogs/privacy-policy-dialog/privacy-policy-dialog';
+import { TermsServiceDialogComponent } from '../dialogs/terms-service-dialog/terms-service-dialog';
 
 interface Profile {
   id: number;
@@ -114,5 +116,23 @@ export class HomeComponent implements OnInit {
         }
       );
     }
+  }
+
+  toggleProject(project: any) {
+    project.expanded = !project.expanded;
+  }
+
+  openPrivacyPolicyDialog(event: Event): void {
+    event.preventDefault();
+    this.dialog.open(PrivacyPolicyDialogComponent, {
+      width: '450px'
+    });
+  }
+
+  openTermsServiceDialog(event: Event): void {
+    event.preventDefault();
+    this.dialog.open(TermsServiceDialogComponent, {
+      width: '450px'
+    });
   }
 }

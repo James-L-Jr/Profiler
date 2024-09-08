@@ -2,13 +2,17 @@ import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { trigger, state, style, transition, animate } from '@angular/animations';
+import { PrivacyPolicyDialogComponent } from '../dialogs/privacy-policy-dialog/privacy-policy-dialog';
+import { TermsServiceDialogComponent } from '../dialogs/terms-service-dialog/terms-service-dialog';
+import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
   imports: [
     RouterLink,
-    CommonModule
+    CommonModule,
+    MatDialogModule
   ],
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.scss'],
@@ -30,6 +34,8 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 })
 
 export class ProjectsComponent {
+  constructor(private dialog: MatDialog) { }
+
   projects = [
     {
       title: 'Portfolio Website - 2024',
@@ -155,5 +161,19 @@ export class ProjectsComponent {
 
   toggleProject(project: any) {
     project.expanded = !project.expanded;
+  }
+
+  openPrivacyPolicyDialog(event: Event): void {
+    event.preventDefault();
+    this.dialog.open(PrivacyPolicyDialogComponent, {
+      width: '450px'
+    });
+  }
+
+  openTermsServiceDialog(event: Event): void {
+    event.preventDefault();
+    this.dialog.open(TermsServiceDialogComponent, {
+      width: '450px'
+    });
   }
 }
