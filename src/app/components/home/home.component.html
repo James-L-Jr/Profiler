@@ -66,26 +66,6 @@
   </div>
 </section>
 
-<!-- <section class="testimonial">
-  <div class="container">
-    <br>
-    <p><i>Page under construction.</i></p>
-    <p><i>Thank you for your understanding.</i></p>
-
-    <h2>Testimonials</h2>
-    <div>
-      <img src="rock.png" alt="Testimonial 1">
-      <p>"Exceeds expectations. It would be downright negligent to rate his performance similar to a bunch of people on the brink of being fired. Haha, as if that could ever happen!"</p>
-      <p>- A rock</p>
-    </div>
-    <div>
-      <img src="biden.png" alt="Testimonial 2">
-      <p>"I can't imagine a better person to have on my staff. I would have him in the White House if his current company wasn't so dedicated to talent retention... What network is this? Where am I?"</p>
-      <p>- Man I found walking outside my apartment</p>
-    </div>
-  </div>
-</section> -->
-
 <div *ngIf="showCreateProfileModal" class="modal-overlay">
   <div class="modal">
     <div class="modal-content">
@@ -93,8 +73,8 @@
       <input [(ngModel)]="newProfileName" placeholder="Enter profile name">
       <div class="modal-buttons">
         <button (click)="closeCreateProfileModal()">Cancel</button>
-        <button (click)="showNotAuthorizedDialog()">Create</button>
-        <!-- <button (click)="createProfile()">Create</button> -->
+        <!-- <button (click)="showNotAuthorizedDialog()">Create</button> -->
+        <button (click)="createProfile()">Create</button>
       </div>
     </div>
   </div>
@@ -105,12 +85,12 @@
     <h2>Site Feedback</h2>
     <p>For inqueries or to submit feedback, use the prompt below:</p>
     <br>
-    <form (ngSubmit)="showDialog($event)">
+    <form (ngSubmit)="showDialog($event, requester.value, message.value)">
       <p class="label">Name:</p>
-      <input type="text" id="requester" name="requester" required>
+      <input type="text" id="name" name="name" required #requester>
       <br><br>
       <p class="label">Message:</p>
-      <textarea id="message" name="message" rows="5" required></textarea>
+      <textarea id="message" name="message" rows="5" required #message></textarea>
       <br>
       <input type="submit" value="Submit">
     </form>
@@ -141,8 +121,6 @@
     </div>
     <div class="footer-bottom">
       <p>&copy; 2024 ProfileMe™. All rights not reserved.</p>
-      <!-- Personality likeness is of no genuine indication of figures or their opinions.</p> -->
-      <!-- <p>Data accuracy not guaranteed</p> -->
       <p>
         <a href="#" class="footer-link" (click)="openPrivacyPolicyDialog($event)">Privacy Policy</a> |
         <a href="#" class="footer-link" (click)="openTermsServiceDialog($event)">Terms of Service</a>

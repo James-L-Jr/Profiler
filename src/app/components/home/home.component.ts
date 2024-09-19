@@ -51,17 +51,24 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  showDialog(event: Event): void {
+  showDialog(event: Event, name: string, message: string): void {
     event.preventDefault();
-    const dialogRef = this.dialog.open(SubmissionCompleteDialogComponent, {
-      width: '450px',
-      disableClose: true,
-      hasBackdrop: true
-    });
-
-    dialogRef.afterClosed().subscribe(result => {
-      console.log('The submission dialog was closed');
-    });
+    
+    const feedback = { name, message };
+    
+    this.profileService.submitFeedback(feedback).subscribe(
+      response => {
+        console.log('Feedback submitted successfully:', response);
+        this.dialog.open(SubmissionCompleteDialogComponent, {
+          width: '450px',
+          disableClose: true,
+          hasBackdrop: true
+        });
+      },
+      error => {
+        console.error('Error submitting feedback:', error);
+      }
+    );
   }
 
   loadProfiles(): void {
@@ -104,21 +111,21 @@ export class HomeComponent implements OnInit {
     this.newProfileName = '';
   }
 
-  // createProfile(): void {
-  //   if (this.newProfileName.trim()) {
-  //     this.profileService.createProfile({ name: this.newProfileName }).subscribe(
-  //       (newProfile: Profile) => {
-  //         this.profiles.push(newProfile);
-  //         this.selectedProfileId = newProfile.id;
-  //         this.updateProfileName();
-  //         this.closeCreateProfileModal();
-  //       },
-  //       error => {
-  //         console.error('Error creating profile:', error);
-  //       }
-  //     );
-  //   }
-  // }
+  createProfile(): void {
+    if (this.newProfileName.trim()) {
+      this.profileService.createProfile({ name: this.newProfileName }).subscribe(
+        (newProfile: Profile) => {
+          this.profiles.push(newProfile);
+          this.selectedProfileId = newProfile.id;
+          this.updateProfileName();
+          this.closeCreateProfileModal();
+        },
+        error => {
+          console.error('Error creating profile:', error);
+        }
+      );
+    }
+  }
 
   toggleProject(project: any) {
     project.expanded = !project.expanded;
@@ -137,4 +144,18 @@ export class HomeComponent implements OnInit {
       width: '450px'
     });
   }
+
+  // Test method
+  // showDialog(event: Event): void {
+  //   event.preventDefault();
+  //   const dialogRef = this.dialog.open(SubmissionCompleteDialogComponent, {
+  //     width: '450px',
+  //     disableClose: true,
+  //     hasBackdrop: true
+  //   });
+
+  //   dialogRef.afterClosed().subscribe(result => {
+  //     console.log('The submission dialog was closed');
+  //   });
+  // }
 }
