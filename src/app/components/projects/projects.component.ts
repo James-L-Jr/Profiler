@@ -43,8 +43,8 @@ export class ProjectsComponent {
       title: 'Portfolio Website - 2024',
       description: 'Angular based portfolio website to demonstrate an accessible and stylized collection of personal and professional experiences.',
       imageUrl: 'angular2.png',
-      tags: ['Angular', 'Spring Boot', 'MSSQL', 'HTML', 'SCSS', 'TypeScript', 'Insomnia'],
-      additionalInfo: 'Angular and Spring Boot portfolio website integrating seamlessly with MSSQL. ' +
+      tags: ['Angular', 'Spring Boot', 'PostgreSQL', 'HTML', 'SCSS', 'TypeScript', 'Insomnia'],
+      additionalInfo: 'Angular and Spring Boot portfolio website integrating seamlessly with postgreSQL db. ' +
                       'Leverages Angular Material for UI and Spring Boot for RESTful services, JPA database interactions, ' +
                       'and routing, ensuring a streamlined and scalable web solution for building web portfolios.',
       expanded: false
