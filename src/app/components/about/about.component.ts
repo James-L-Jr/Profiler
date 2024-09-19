@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { ResumeService } from '../../services/resume.service';
+import { PrivacyPolicyDialogComponent } from '../dialogs/privacy-policy-dialog/privacy-policy-dialog';
+import { TermsServiceDialogComponent } from '../dialogs/terms-service-dialog/terms-service-dialog';
+import { MatDialog } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-about',
@@ -11,12 +14,14 @@ import { ResumeService } from '../../services/resume.service';
   styleUrls: ['./about.component.scss']
 })
 export class AboutComponent {
+  constructor(private dialog: MatDialog) { }
+
   resumeData = {
     name: 'James Logan',
     title: 'Software Engineer',
     contact: {
-      email: 'jamestest@test.com',
-      phone: '(123) 456-7890',
+      email: 'james.f.logan2@gmail.com',
+      phone: 'Available upon request',
       location: 'Austin, TX'
     },
     summary: 'Experienced software engineer with a passion for creating secure and efficient applications. ' +
@@ -72,6 +77,20 @@ export class AboutComponent {
 
   getResumeDataKeys(): string {
     return Object.keys(this.resumeData).join(', ');
+  }
+
+  openPrivacyPolicyDialog(event: Event): void {
+    event.preventDefault();
+    this.dialog.open(PrivacyPolicyDialogComponent, {
+      width: '450px'
+    });
+  }
+
+  openTermsServiceDialog(event: Event): void {
+    event.preventDefault();
+    this.dialog.open(TermsServiceDialogComponent, {
+      width: '450px'
+    });
   }
 }
 
