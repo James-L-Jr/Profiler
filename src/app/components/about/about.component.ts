@@ -32,10 +32,13 @@ export class AboutComponent {
         company: 'General Motors',
         position: 'Software Engineer - Observability',
         duration: 'Dec 2023 - Present',
+        scope: 'Developed and maintained secure web applications using Angular, Java, and Python, ' +
+                'supporting operations in over 18 plants nationwide and abroad. Collaborated with cross-functional ' +
+                'teams to design, integrate, and upgrade features for improved functionality across existing platforms.',
         responsibilities: [
           'Developed full-stack solutions for manufacturing applications, reaching several early deployment goals',
-          'Configured more than 100 Grafana dashboard visualizations to allow observability of critical manufacturing systems ' + 
-          'and reduce factory stoppages in more than 18 plants nationwide and abroad',
+          'Configured over 100 Grafana dashboards to enhance observability of manufacturing systems, ' +
+          'reducing factory stoppages and earning high praise from floor engineers for improved operational visibility',
           'Developed and applied custom functions to PostgreSQL databases to customize database behavior',
           'Took a proactive role in testing, creating performance documentation and resolving more than 50 bugs'
         ]
@@ -44,17 +47,21 @@ export class AboutComponent {
         company: 'General Motors',
         position: 'DevOps Engineer',
         duration: 'Jun 2022 - Dec 2023',
+        scope: 'Acted as a company subject-matter expert for CI/CD workflows on the Azure platform. ' +
+                'Maintained ownership responsibilities of virtual server environments across Windows and Linux operating systems.',
         responsibilities: [
-          'Acted as a company subject-matter expert for CI/CD workflows on the Azure platform',
           'Brought more than six production applications to meet 100% of company CI/CD adoption standards',
           'Developed deployment scripts to first-time deploy an organizational priority app to the Azure cloud',
-          'Managed and maintained virtual server environments across Windows and Linux operating systems'
+          'Maintained active deployments for six production applications, ensuring continuous operability',
+          'Performed patching, certification rotations, and remediation across Windows and Linux environments'
         ]
       },
       {
         company: 'HCL America Inc.',
         position: 'Developer',
         duration: 'Dec 2021 - Jun 2022',
+        scope: 'Developed full-stack solutions in Java and JavaScript for a company-facing web application. ' + 
+                'Acted as an analyst for Oracle database upgrade efforts for a major U.S. bank.',
         responsibilities: [
           'Developed full stack solutions in Java/Javascript for company-facing web applications',
           'Conducted unit and integration testing using JUnit, Postman, Insomnia, and other tools',
